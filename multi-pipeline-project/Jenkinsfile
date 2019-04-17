@@ -1,7 +1,7 @@
 node {
    echo 'Hello World'
     
-   stage('exec - nodejs sample app')  {
+   stage('exec - "nodejs sample app"')  {
           
       script
       {
