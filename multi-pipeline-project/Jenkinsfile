@@ -1,13 +1,15 @@
 node {
    echo 'Hello World'
     
-   stage('exec -  nodejs sample app')  {
+   stage('exec - nodejs sample app')  {
           
       script
       {
-          build ' nodejs sample app'
+          build 'nodejs sample app'
       }
       
   }
+
+  echo 'Finish'
  
 }
