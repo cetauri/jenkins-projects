@@ -1,5 +1,9 @@
 node {
     def name = "1111"
+    
+    parameters {
+        booleanParam(defaultValue: true, description: '', name: 'userFlag')
+    }
 
     stage('prep') {
       println 'prep' 
