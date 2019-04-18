@@ -14,7 +14,7 @@ node {
 
       // Prameter
       println "$println: {params.isBoolean}"
-      echo "echo: ${params.isBoolean}"
+      // echo "echo: ${params.isBoolean}"
       // println "name: ${name}"
       // name = "cetauri"
 
