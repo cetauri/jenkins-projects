@@ -26,6 +26,6 @@ node {
     stage('deploy') {
       println 'deploy'
       println "name: ${name}"
-      println "name: ${userFlag}"
+      println "userFlag: ${params.userFlag}"
     }
 }
