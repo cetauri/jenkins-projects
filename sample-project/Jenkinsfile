@@ -1,10 +1,12 @@
 node {
     stage('prep') {
-      println 'prep'
+      println 'prep' 
+      println $isBoolean
     }
 
     stage('build') {
       println 'build'
+      println ${params.isBoolean}
     }
 
     stage('test') {
