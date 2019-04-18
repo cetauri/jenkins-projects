@@ -1,7 +1,6 @@
 node {
     stage('prep') {
       println 'prep' 
-      println $isBoolean
     }
 
     stage('build') {
