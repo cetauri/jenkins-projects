@@ -1,12 +1,18 @@
 node {
+    def name = "1111"
+
     stage('prep') {
       println 'prep' 
     }
 
     stage('build') {
       println 'build'
-      println "${params.isBoolean}"
-      echo "flag: ${params.isBoolean}"
+
+      // Prameter
+      println "$println: {params.isBoolean}"
+      echo "echo: ${params.isBoolean}"
+      println "name: ${name}"
+      name = "cetauri"
 
     }
 
@@ -16,5 +22,6 @@ node {
 
     stage('deploy') {
       println 'deploy'
+      println "name: ${name}"
     }
 }
