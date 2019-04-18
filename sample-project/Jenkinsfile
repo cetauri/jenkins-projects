@@ -15,8 +15,8 @@ node {
       // Prameter
       println "$println: {params.isBoolean}"
       echo "echo: ${params.isBoolean}"
-      println "name: ${name}"
-      name = "cetauri"
+      // println "name: ${name}"
+      // name = "cetauri"
 
     }
 
@@ -26,6 +26,6 @@ node {
 
     stage('deploy') {
       println 'deploy'
-      println "name: ${name}"
+      // println "name: ${name}"
     }
 }
