@@ -5,7 +5,9 @@ node {
 
     stage('build') {
       println 'build'
-      println ${params.isBoolean}
+      println "${params.isBoolean}"
+      echo "flag: ${params.userFlag}"
+
     }
 
     stage('test') {
