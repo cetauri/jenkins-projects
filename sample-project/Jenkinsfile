@@ -3,6 +3,7 @@ node {
     parameters {
         booleanParam(defaultValue: true, description: '', name: 'userFlag')
     }
+
     stage('prep') {
       println 'prep' 
     }
@@ -25,5 +26,6 @@ node {
     stage('deploy') {
       println 'deploy'
       println "name: ${name}"
+      println "name: ${userFlag}"
     }
 }
