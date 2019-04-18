@@ -1,10 +1,8 @@
 node {
     def name = "1111"
-    
     parameters {
         booleanParam(defaultValue: true, description: '', name: 'userFlag')
     }
-
     stage('prep') {
       println 'prep' 
     }
@@ -13,10 +11,10 @@ node {
       println 'build'
 
       // Prameter
-      println "$println: {params.isBoolean}"
-      // echo "echo: ${params.isBoolean}"
-      // println "name: ${name}"
-      // name = "cetauri"
+      println "println: ${params.isBoolean}"
+      echo "echo: ${params.isBoolean}"
+      println "name: ${name}"
+      name = "cetauri"
 
     }
 
@@ -26,6 +24,6 @@ node {
 
     stage('deploy') {
       println 'deploy'
-      // println "name: ${name}"
+      println "name: ${name}"
     }
 }
