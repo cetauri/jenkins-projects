@@ -1,4 +1,4 @@
-node {
+pipeline {
     stage('prep') {
       println 'prep'
     }
