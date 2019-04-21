@@ -2,19 +2,27 @@ pipeline {
   stages {
 
     stage('prep') {
-      println 'prep'
+      steps{
+        println 'prep'  
+      }
     }
 
     stage('build') {
-      println 'build'
+      steps{      
+        println 'build'
+      }
     }
 
     stage('test') {
-      println 'test'
+      steps{      
+        println 'test'
+      } 
     }
 
     stage('deploy') {
-      println 'deploy'
+      steps{      
+        println 'deploy'
+      }
     }
   }
 }
