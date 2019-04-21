@@ -5,7 +5,8 @@ node {
     }
 
     stage('prep') {
-      println 'prep' 
+        println 'prep 1' 
+        println 'prep 2' 
     }
 
     stage('build') {
