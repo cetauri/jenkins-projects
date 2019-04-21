@@ -1,4 +1,6 @@
 pipeline {
+  stages {
+
     stage('prep') {
       println 'prep'
     }
@@ -14,4 +16,5 @@ pipeline {
     stage('deploy') {
       println 'deploy'
     }
+  }
 }
